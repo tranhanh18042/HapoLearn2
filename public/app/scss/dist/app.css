@@ -4,17 +4,12 @@ html {
 
 .nav-main {
   width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .navbar-menu {
   z-index: 10;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   margin-right: 5%;
 }
 
@@ -39,10 +34,7 @@ html {
 
 .nav-main {
   width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .banner {
@@ -58,29 +50,24 @@ html {
   left: 5%;
   top: 30rem;
 }
-
 .banner-content .content-title {
   font-size: 48px;
 }
-
 .banner-content .content-where {
   font-family: cursive;
   font-weight: bold;
   font-size: 40px;
 }
-
 .banner-content .content-text {
   font-size: 15px;
 }
-
 .banner-content .banner-btn {
   width: 377px;
   height: 77px;
   font-family: cursive;
   background-color: #B2D235;
   border-radius: 37px;
-  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 0;
 }
 
@@ -102,12 +89,8 @@ html {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .container-card {
@@ -118,15 +101,9 @@ html {
   margin-left: 2rem;
   margin-right: 2rem;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .card-img-top {
@@ -142,9 +119,7 @@ html {
 .text-detail {
   text-align: center;
   font-size: 14px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .btn-take-this-courses {
@@ -157,25 +132,15 @@ html {
   border-radius: 22px;
   margin-left: 20%;
   margin-right: 20%;
-  -webkit-box-shadow: inset 0px 1.5px 2px #6F8710;
-          box-shadow: inset 0px 1.5px 2px #6F8710;
+  box-shadow: inset 0px 1.5px 2px #6F8710;
   border: 0px;
 }
 
 .body-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .gradient-background {
@@ -183,30 +148,21 @@ html {
   margin-top: 1px;
   width: 100%;
   height: 125px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(87.5%, #FFFBFB), to(#E7E9EE));
   background: linear-gradient(180deg, #FFFBFB 87.5%, #E7E9EE 100%);
 }
 
 .container-other {
   margin-top: 100px;
 }
-
 .container-other .container-card-other {
   margin-top: 100px;
 }
 
 .container-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .container-title .title-other-courses {
   font-size: 80px;
   font-weight: bold;
@@ -218,14 +174,9 @@ html {
 }
 
 .view-all {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .view-all .img-arrow {
   width: 50px;
   height: 30px;
@@ -265,7 +216,6 @@ html {
   left: 150px;
   top: 2500px;
 }
-
 .why-hapo .title {
   font-size: 70px;
   font-weight: bold;
@@ -277,15 +227,9 @@ html {
   position: absolute;
   left: 150px;
   top: 2600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .pragraph .line-pragraph {
   margin: 10px;
   color: white;
@@ -305,39 +249,35 @@ html {
 
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
   .container-navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .container-navbar .navbar-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
+
   .btn-menu {
     display: none;
   }
+
   .logo {
     margin-left: 0;
   }
+
   .navbar-menu {
     margin-right: 0;
   }
+
   .list-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
+
   .banner {
     width: 100%;
     height: 350px;
     background-image: url("img/banner_tablet.png");
   }
+
   .banner-content {
     position: absolute;
     left: 5%;
@@ -360,13 +300,14 @@ html {
     font-family: cursive;
     background-color: #B2D235;
     border-radius: 35px;
-    -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 0;
   }
+
   .link-start {
     font-size: 16px;
   }
+
   .title-other-courses {
     font-size: 50px;
     font-family: cursive;
@@ -374,22 +315,18 @@ html {
     border-bottom: 6px solid #B2D235;
     border-radius: 3px;
   }
+
   .btn-view-all {
     color: #90AB26;
     text-decoration: none;
     font-size: 28px;
     font-family: cursive;
   }
+
   .container-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .container-title .title-other-courses {
     font-size: 50px;
@@ -400,11 +337,11 @@ html {
     border-bottom: 6px solid #B2D235;
     border-radius: 3px;
   }
+
   .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
+
   .container-card {
     z-index: 1;
     width: 225px;
@@ -413,31 +350,27 @@ html {
     margin-left: 2rem;
     margin-right: 2rem;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    display: -webkit-box;
-    display: -ms-flexbox;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .card-img-top {
     height: 45%;
   }
+
   .card-title {
     color: #B2D235;
     font-size: 20px;
     text-align: center;
   }
+
   .text-detail {
     text-align: center;
     font-size: 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
+
   .btn-take-this-courses {
     background-color: #B2D235;
     width: 116px;
@@ -448,32 +381,20 @@ html {
     border-radius: 12px;
     margin-left: 20%;
     margin-right: 20%;
-    -webkit-box-shadow: inset 0px 1.5px 2px #6F8710;
-            box-shadow: inset 0px 1.5px 2px #6F8710;
+    box-shadow: inset 0px 1.5px 2px #6F8710;
     border: 0px;
   }
+
   .body-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
   .view-all {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .view-all .img-arrow {
     width: 40px;
@@ -481,6 +402,7 @@ html {
     margin-top: 45px;
     margin-left: 5px;
   }
+
   .why-hapo-learn .container-why-hapo-learn {
     width: 100%;
     height: 395px;
@@ -489,12 +411,14 @@ html {
     background-size: cover, contain;
     background-repeat: no-repeat;
   }
+
   .img-keyboard {
     position: absolute;
     margin-top: -120px;
     width: 277px;
     height: 277px;
   }
+
   .why-hapo {
     position: relative;
     width: 500px;
@@ -508,17 +432,13 @@ html {
     font-family: cursive;
     text-align: center;
   }
+
   .pragraph {
     position: relative;
     left: 5%;
     top: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .pragraph .line-pragraph {
     margin: 5px;
@@ -526,6 +446,7 @@ html {
     font-size: 13px;
     line-height: 9px;
   }
+
   .img-laptop-tablet {
     position: relative;
     width: 365px;
@@ -534,23 +455,15 @@ html {
     top: -35%;
   }
 }
-
 @media only screen and (min-width: 200px) and (max-width: 767px) {
   .container-navbar {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .container-navbar .navbar-menu .list-menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
+
   .list-menu .list-item:hover {
     background-color: white;
     border-radius: 17rem;
@@ -558,6 +471,7 @@ html {
   .list-menu .list-item:hover .item:hover {
     color: #B2D235;
   }
+
   .logo {
     width: 50px;
     height: 26px;
@@ -568,27 +482,23 @@ html {
     width: 150px;
     height: 26px;
   }
+
   .navbar-menu {
     margin-right: 0;
   }
+
   .banner {
     width: 100%;
     height: 200px;
     background-image: url("img/banner_phone.png");
   }
+
   .banner-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-top: 10%;
     margin-left: 10%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .banner-content .content-title {
     font-size: 25px;
@@ -607,16 +517,15 @@ html {
     font-family: cursive;
     background-color: #B2D235;
     border-radius: 35px;
-    -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
+
   .link-start {
     font-size: 16px;
   }
+
   .title-other-courses {
     font-size: 50px;
     font-family: cursive;
@@ -624,26 +533,23 @@ html {
     border-bottom: 6px solid #B2D235;
     border-radius: 3px;
   }
+
   .btn-view-all {
     color: #90AB26;
     text-decoration: none;
     font-size: 28px;
     font-family: cursive;
   }
+
   .gradient-background {
     z-index: -1;
     height: 400px;
   }
+
   .container-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .container-title .title-other-courses {
     font-size: 40px;
@@ -654,25 +560,21 @@ html {
     border-bottom: 6px solid #B2D235;
     border-radius: 3px;
   }
+
   .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: -30%;
   }
+
   .container-other {
     margin-top: 30px;
   }
   .container-other .container-card-other {
     margin-top: 0;
   }
+
   .container-card {
     z-index: 1;
     width: 225px;
@@ -681,31 +583,27 @@ html {
     margin-left: 2rem;
     margin-right: 2rem;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    display: -webkit-box;
-    display: -ms-flexbox;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .card-img-top {
     height: 45%;
   }
+
   .card-title {
     color: #B2D235;
     font-size: 20px;
     text-align: center;
   }
+
   .text-detail {
     text-align: center;
     font-size: 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
+
   .btn-take-this-courses {
     background-color: #B2D235;
     width: 116px;
@@ -716,32 +614,20 @@ html {
     border-radius: 12px;
     margin-left: 20%;
     margin-right: 20%;
-    -webkit-box-shadow: inset 0px 1.5px 2px #6F8710;
-            box-shadow: inset 0px 1.5px 2px #6F8710;
+    box-shadow: inset 0px 1.5px 2px #6F8710;
     border: 0px;
   }
+
   .body-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
   .view-all {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .view-all .img-arrow {
     width: 20px;
@@ -749,12 +635,14 @@ html {
     margin-top: 45px;
     margin-left: 5px;
   }
+
   .btn-view-all {
     color: #90AB26;
     text-decoration: none;
     font-size: 22px;
     font-family: cursive;
   }
+
   .why-hapo-learn .container-why-hapo-learn {
     width: 100%;
     height: 569px;
@@ -763,12 +651,14 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .img-keyboard {
     position: absolute;
     margin-top: -80px;
     width: 226px;
     height: 226px;
   }
+
   .why-hapo {
     position: relative;
     width: 200px;
@@ -781,23 +671,20 @@ html {
     font-weight: bold;
     font-family: cursive;
   }
+
   .pragraph {
     position: relative;
     left: 5%;
     top: 35px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .pragraph .line-pragraph {
     color: white;
     font-size: 12px;
     line-height: 17px;
   }
+
   .img-laptop-tablet {
     position: relative;
     width: 316px;
@@ -806,4 +693,3 @@ html {
     top: 0;
   }
 }
-/*# sourceMappingURL=app.css.map */
