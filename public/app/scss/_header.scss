@@ -1,7 +1,4 @@
 @import 'variable';
-html {
-  font-size: 62.5%;
-}
 
 .nav-main {
   width: 100%;
@@ -45,19 +42,24 @@ html {
 @media only screen and (min-width:768px) and (max-width: 1025px) {
   .container-navbar {
     flex-direction: column;
+    
     .navbar-menu {
       display: flex;
     }
   }
+  
   .btn-menu {
     display: none;
   }
+  
   .logo {
     margin-left: 0;
   }
+  
   .navbar-menu {
     margin-right: 0;
   }
+  
   .list-menu {
     display: flex;
     flex-direction: row;
@@ -67,6 +69,7 @@ html {
 @media only screen and (min-width:200px) and (max-width: 767px) {
   .container-navbar {
     flex-direction: row;
+    
     .navbar-menu {
       .list-menu {
         flex-direction: column;
@@ -74,15 +77,18 @@ html {
       }
     }
   }
+  
   .list-menu {
     .list-item:hover {
       background-color: $color-letter-white;
       border-radius: 17rem;
+      
       .item:hover {
         color: #B2D235;
       }
     }
   }
+  
   .logo {
     width: 50px;
     height: 26px;
@@ -93,6 +99,7 @@ html {
       height: 26px;
     }
   }
+
   .navbar-menu {
     margin-right: 0;
   }

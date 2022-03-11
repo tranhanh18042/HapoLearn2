@@ -1,4 +1,9 @@
 @import 'variable';
+
+html {
+    font-size: 62.5%;
+}
+
 @import '_header';
 @import '_banner';
 @import 'list_courses';
