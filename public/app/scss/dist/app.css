@@ -37,18 +37,75 @@ html {
   flex-direction: column;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .container-navbar {
+    flex-direction: column;
+  }
+  .container-navbar .navbar-menu {
+    display: flex;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .navbar-menu {
+    margin-right: 0;
+  }
+
+  .list-menu {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  .container-navbar {
+    flex-direction: row;
+  }
+  .container-navbar .navbar-menu .list-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list-menu .list-item:hover {
+    background-color: white;
+    border-radius: 17rem;
+  }
+  .list-menu .list-item:hover .item:hover {
+    color: #B2D235;
+  }
+
+  .logo {
+    width: 50px;
+    height: 26px;
+    margin-left: 0;
+    margin-right: 55%;
+  }
+  .logo .img-logo {
+    width: 150px;
+    height: 26px;
+  }
+
+  .navbar-menu {
+    margin-right: 0;
+  }
+}
 .banner {
   width: 100%;
   height: 650px;
-  background-image: url("img/banner.png");
+  display: flex;
+  align-items: center;
+  background-image: url("https://s3-alpha-sig.figma.com/img/866b/63ac/1e9eca12ac0612fb7b885045132e08f8?Expires=1647820800&Signature=NhlkpIpR6qN9L7m7-pfHBq5CIZ2ouCnC5HnoqWJpGwg2X3bxKw0PwdqbD6pOVC2bkh1EZhALlq6bRzlzhi-PAkP-A2GCTYJW-LwDXss3DDreysAOAoHToqPOAvt-h6bH13-2kYc4b9gPVUbWBAZ5x-cM0-daiEht7K5elJyh26MXyyqN~lVcQKoZCkW4fk9PQZqALMNW8fAXsCFJLS3rc17Wb~Y-OJKdvCRZBZtWQCzO~7xh~moTdznh1VdqxF2U-gXam~PNA~Lxf1ixzgktPPOeX1DuZmEwbcbjjDpDdEIjApJ4stSg-KicKlNrx9Fbe5PfNY0~QXmcBKi0pCwbgA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .banner-content {
-  position: absolute;
-  left: 5%;
-  top: 30rem;
+  margin-left: 5%;
 }
 .banner-content .content-title {
   font-size: 48px;
@@ -61,26 +118,86 @@ html {
 .banner-content .content-text {
   font-size: 15px;
 }
-.banner-content .banner-btn {
-  width: 377px;
-  height: 77px;
-  font-family: cursive;
+.banner-content .btn-link-start {
   background-color: #B2D235;
-  border-radius: 37px;
+  width: 377px;
+  height: 70px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 0;
 }
-
-.link-start {
+.banner-content .btn-link-start .link-start {
   color: white;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
+  font-family: cursive;
 }
-
-.link-start:hover {
+.banner-content .btn-link-start .link-start:hover {
   text-decoration: underline;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .banner {
+    height: 350px;
+    background-image: url("https://s3-alpha-sig.figma.com/img/866b/63ac/1e9eca12ac0612fb7b885045132e08f8?Expires=1647820800&Signature=NhlkpIpR6qN9L7m7-pfHBq5CIZ2ouCnC5HnoqWJpGwg2X3bxKw0PwdqbD6pOVC2bkh1EZhALlq6bRzlzhi-PAkP-A2GCTYJW-LwDXss3DDreysAOAoHToqPOAvt-h6bH13-2kYc4b9gPVUbWBAZ5x-cM0-daiEht7K5elJyh26MXyyqN~lVcQKoZCkW4fk9PQZqALMNW8fAXsCFJLS3rc17Wb~Y-OJKdvCRZBZtWQCzO~7xh~moTdznh1VdqxF2U-gXam~PNA~Lxf1ixzgktPPOeX1DuZmEwbcbjjDpDdEIjApJ4stSg-KicKlNrx9Fbe5PfNY0~QXmcBKi0pCwbgA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  }
+
+  .banner-content .content-title {
+    font-size: 30px;
+  }
+  .banner-content .content-where {
+    font-size: 30px;
+  }
+  .banner-content .content-text {
+    font-size: 16px;
+  }
+  .banner-content .btn-link-start {
+    width: 200px;
+    height: 30px;
+  }
+  .banner-content .btn-link-start .link-start {
+    font-size: 16px;
+  }
+  .banner-content .btn-link-start .link-start:hover {
+    text-decoration: underline;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  .banner {
+    justify-content: center;
+    height: 200px;
+    background-image: url("https://s3-alpha-sig.figma.com/img/866b/63ac/1e9eca12ac0612fb7b885045132e08f8?Expires=1647820800&Signature=NhlkpIpR6qN9L7m7-pfHBq5CIZ2ouCnC5HnoqWJpGwg2X3bxKw0PwdqbD6pOVC2bkh1EZhALlq6bRzlzhi-PAkP-A2GCTYJW-LwDXss3DDreysAOAoHToqPOAvt-h6bH13-2kYc4b9gPVUbWBAZ5x-cM0-daiEht7K5elJyh26MXyyqN~lVcQKoZCkW4fk9PQZqALMNW8fAXsCFJLS3rc17Wb~Y-OJKdvCRZBZtWQCzO~7xh~moTdznh1VdqxF2U-gXam~PNA~Lxf1ixzgktPPOeX1DuZmEwbcbjjDpDdEIjApJ4stSg-KicKlNrx9Fbe5PfNY0~QXmcBKi0pCwbgA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 26rem;
+    margin-left: 0;
+  }
+  .banner-content .content-title {
+    font-size: 25px;
+  }
+  .banner-content .content-where {
+    font-size: 25px;
+  }
+  .banner-content .content-text {
+    font-size: 16px;
+  }
+  .banner-content .btn-link-start {
+    margin-left: 4rem;
+    width: 200px;
+    height: 30px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .banner-content .btn-link-start .link-start {
+    font-size: 16px;
+  }
+  .banner-content .btn-link-start .link-start:hover {
+    text-decoration: underline;
+  }
+}
 .btn-take-courses {
   width: 200px;
   height: 42px;
@@ -151,10 +268,146 @@ html {
   background: linear-gradient(180deg, #FFFBFB 87.5%, #E7E9EE 100%);
 }
 
-.container-other {
-  margin-top: 100px;
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .title-other-courses {
+    font-size: 50px;
+    font-family: cursive;
+    line-height: 61px;
+    border-bottom: 6px solid #B2D235;
+    border-radius: 3px;
+  }
+
+  .btn-view-all {
+    color: #90AB26;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: cursive;
+  }
+
+  .container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-title .title-other-courses {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: cursive;
+    line-height: 61px;
+    border-bottom: 6px solid #B2D235;
+    border-radius: 3px;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .container-card {
+    z-index: 1;
+    width: 225px;
+    height: 300px;
+    margin-top: -80px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-img-top {
+    height: 45%;
+  }
+
+  .card-title {
+    color: #B2D235;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-detail {
+    text-align: center;
+    font-size: 10px;
+    justify-content: center;
+  }
+
+  .btn-take-this-courses {
+    background-color: #B2D235;
+    width: 116px;
+    height: 24px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 12px;
+    border-radius: 12px;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: inset 0px 1.5px 2px #6F8710;
+    border: 0px;
+  }
+
+  .body-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.container-other .container-card-other {
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  .gradient-background {
+    z-index: -1;
+    height: 330px;
+  }
+
+  .container-card {
+    z-index: 1;
+    width: 225px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-img-top {
+    height: 45%;
+  }
+
+  .body-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .body-card .card-title {
+    color: #B2D235;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .body-card .text-detail {
+    text-align: center;
+    font-size: 10px;
+    justify-content: center;
+  }
+  .body-card .btn-take-this-courses {
+    background-color: #B2D235;
+    width: 116px;
+    height: 24px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 12px;
+    border-radius: 12px;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: inset 0px 1.5px 2px #6F8710;
+    border: 0px;
+  }
+}
+.other .container-card-other {
   margin-top: 100px;
 }
 
@@ -196,116 +449,9 @@ html {
   text-decoration: underline;
 }
 
-.why-hapo-learn .container-why-hapo-learn {
-  width: 100%;
-  height: 740px;
-  margin-top: 116px;
-  background-image: url("img/backgroup_gray.png");
-  background-size: cover;
-}
-
-.img-keyboard {
-  position: absolute;
-  margin-top: -225px;
-  width: 588px;
-  height: 588px;
-}
-
-.why-hapo {
-  position: absolute;
-  left: 150px;
-  top: 2500px;
-}
-.why-hapo .title {
-  font-size: 70px;
-  font-weight: bold;
-  font-family: cursive;
-  color: white;
-}
-
-.pragraph {
-  position: absolute;
-  left: 150px;
-  top: 2600px;
-  display: flex;
-  flex-direction: column;
-}
-.pragraph .line-pragraph {
-  margin: 10px;
-  color: white;
-  font-size: 20px;
-  list-style: 30px;
-  line-height: 24px;
-}
-
-.img-laptop-tablet {
-  position: absolute;
-  width: 792px;
-  height: 544px;
-  left: 50%;
-  top: 2350px;
-  position: absolute;
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
-  .container-navbar {
-    flex-direction: column;
-  }
-  .container-navbar .navbar-menu {
-    display: flex;
-  }
-
-  .btn-menu {
-    display: none;
-  }
-
-  .logo {
-    margin-left: 0;
-  }
-
-  .navbar-menu {
-    margin-right: 0;
-  }
-
-  .list-menu {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .banner {
-    width: 100%;
-    height: 350px;
-    background-image: url("img/banner_tablet.png");
-  }
-
-  .banner-content {
-    position: absolute;
-    left: 5%;
-    top: 20rem;
-  }
-  .banner-content .content-title {
-    font-size: 25px;
-  }
-  .banner-content .content-where {
-    font-family: cursive;
-    font-weight: bold;
-    font-size: 25px;
-  }
-  .banner-content .content-text {
-    font-size: 10px;
-  }
-  .banner-content .banner-btn {
-    width: 200px;
-    height: 37px;
-    font-family: cursive;
-    background-color: #B2D235;
-    border-radius: 35px;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 0;
-  }
-
-  .link-start {
-    font-size: 16px;
+  .container-card-other {
+    margin-top: 30px;
   }
 
   .title-other-courses {
@@ -397,135 +543,13 @@ html {
     justify-content: center;
   }
   .view-all .img-arrow {
-    width: 40px;
-    height: 20px;
-    margin-top: 45px;
-    margin-left: 5px;
-  }
-
-  .why-hapo-learn .container-why-hapo-learn {
-    width: 100%;
-    height: 395px;
-    margin-top: 116px;
-    background-image: url("img/background_gray_tablet.png");
-    background-size: cover, contain;
-    background-repeat: no-repeat;
-  }
-
-  .img-keyboard {
-    position: absolute;
-    margin-top: -120px;
-    width: 277px;
-    height: 277px;
-  }
-
-  .why-hapo {
-    position: relative;
-    width: 500px;
-    top: 37px;
-  }
-  .why-hapo .title {
-    text-align: center;
-    width: 404px;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: cursive;
-    text-align: center;
-  }
-
-  .pragraph {
-    position: relative;
-    left: 5%;
-    top: 100px;
-    display: flex;
-    flex-direction: column;
-  }
-  .pragraph .line-pragraph {
-    margin: 5px;
-    color: white;
-    font-size: 13px;
-    line-height: 9px;
-  }
-
-  .img-laptop-tablet {
-    position: relative;
-    width: 365px;
-    height: 259px;
-    left: 52%;
-    top: -35%;
+    width: 50px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 10px;
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 767px) {
-  .container-navbar {
-    flex-direction: row;
-  }
-  .container-navbar .navbar-menu .list-menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .list-menu .list-item:hover {
-    background-color: white;
-    border-radius: 17rem;
-  }
-  .list-menu .list-item:hover .item:hover {
-    color: #B2D235;
-  }
-
-  .logo {
-    width: 50px;
-    height: 26px;
-    margin-left: 0;
-    margin-right: 55%;
-  }
-  .logo .img-logo {
-    width: 150px;
-    height: 26px;
-  }
-
-  .navbar-menu {
-    margin-right: 0;
-  }
-
-  .banner {
-    width: 100%;
-    height: 200px;
-    background-image: url("img/banner_phone.png");
-  }
-
-  .banner-content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%;
-    margin-left: 10%;
-    justify-content: center;
-  }
-  .banner-content .content-title {
-    font-size: 25px;
-  }
-  .banner-content .content-where {
-    font-family: cursive;
-    font-weight: bold;
-    font-size: 25px;
-  }
-  .banner-content .content-text {
-    font-size: 10px;
-  }
-  .banner-content .banner-btn {
-    width: 280px;
-    height: 46px;
-    font-family: cursive;
-    background-color: #B2D235;
-    border-radius: 35px;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 0;
-    justify-content: center;
-  }
-
-  .link-start {
-    font-size: 16px;
-  }
-
   .title-other-courses {
     font-size: 50px;
     font-family: cursive;
@@ -539,11 +563,6 @@ html {
     text-decoration: none;
     font-size: 28px;
     font-family: cursive;
-  }
-
-  .gradient-background {
-    z-index: -1;
-    height: 400px;
   }
 
   .container-title {
@@ -568,11 +587,11 @@ html {
     margin-top: -30%;
   }
 
-  .container-other {
-    margin-top: 30px;
+  .other {
+    margin-top: 100px;
   }
-  .container-other .container-card-other {
-    margin-top: 0;
+  .other .container-card-other {
+    margin-top: 10px;
   }
 
   .container-card {
@@ -595,6 +614,7 @@ html {
   .card-title {
     color: #B2D235;
     font-size: 20px;
+    font-weight: bold;
     text-align: center;
   }
 
@@ -632,64 +652,7 @@ html {
   .view-all .img-arrow {
     width: 20px;
     height: 10px;
-    margin-top: 45px;
+    margin-top: 35 px;
     margin-left: 5px;
-  }
-
-  .btn-view-all {
-    color: #90AB26;
-    text-decoration: none;
-    font-size: 22px;
-    font-family: cursive;
-  }
-
-  .why-hapo-learn .container-why-hapo-learn {
-    width: 100%;
-    height: 569px;
-    margin-top: 116px;
-    background-image: url("img/background_gray_phone.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .img-keyboard {
-    position: absolute;
-    margin-top: -80px;
-    width: 226px;
-    height: 226px;
-  }
-
-  .why-hapo {
-    position: relative;
-    width: 200px;
-    top: 25px;
-    left: 40%;
-  }
-  .why-hapo .title {
-    width: 300px;
-    font-size: 35px;
-    font-weight: bold;
-    font-family: cursive;
-  }
-
-  .pragraph {
-    position: relative;
-    left: 5%;
-    top: 35px;
-    display: flex;
-    flex-direction: column;
-  }
-  .pragraph .line-pragraph {
-    color: white;
-    font-size: 12px;
-    line-height: 17px;
-  }
-
-  .img-laptop-tablet {
-    position: relative;
-    width: 316px;
-    height: 218px;
-    left: 5%;
-    top: 0;
   }
 }
