@@ -15,3 +15,4 @@ yarn-error.log
 /.vscode
 /public/app/public
 /public/app/scss/dist
+resources/
