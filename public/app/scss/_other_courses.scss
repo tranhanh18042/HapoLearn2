@@ -1,4 +1,6 @@
+@import 'variable';
 .other {
+    margin-top: 100px;
     .container-card-other {
         margin-top: 100px;
     }
@@ -31,7 +33,7 @@
 }
 
 .btn-view-all {
-    color: #90AB26;
+    color: $color-button-view-all;
     text-decoration: none;
     margin-top: 30px;
     font-size: 40px;
@@ -54,7 +56,7 @@
         border-radius: 3px;
     }
     .btn-view-all {
-        color: #90AB26;
+        color: $color-button-view-all;
         text-decoration: none;
         font-size: 28px;
         font-family: cursive;
@@ -92,7 +94,7 @@
         height: 45%;
     }
     .card-title {
-        color: #B2D235;
+        color: $color-text-title;
         font-size: 20px;
         text-align: center;
     }
@@ -102,7 +104,7 @@
         justify-content: center;
     }
     .btn-take-this-courses {
-        background-color: #B2D235;
+        background-color: $color-buton;
         width: 116px;
         height: 24px;
         font-size: 10px;
@@ -141,7 +143,7 @@
         border-radius: 3px;
     }
     .btn-view-all {
-        color: #90AB26;
+        color: $color-button-view-all;
         text-decoration: none;
         font-size: 28px;
         font-family: cursive;
@@ -188,7 +190,7 @@
         height: 45%;
     }
     .card-title {
-        color: #B2D235;
+        color: $color-text-title;
         font-size: 20px;
         font-weight: bold;
         text-align: center;
@@ -199,7 +201,7 @@
         justify-content: center;
     }
     .btn-take-this-courses {
-        background-color: #B2D235;
+        background-color: $color-buton;
         width: 116px;
         height: 24px;
         font-size: 10px;
