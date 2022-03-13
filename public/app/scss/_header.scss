@@ -1,5 +1,9 @@
 @import 'variable';
 
+html {
+  font-size: 62.5%;
+}
+
 .nav-main {
   width: 100%;
   flex-direction: column;
@@ -13,7 +17,7 @@
 
 .container-navbar {
   .logo {
-    margin-left: 5%;
+      margin-left: 5%;
   }
 }
 
@@ -26,6 +30,10 @@
   .list-item:hover {
     background-color: $color-buton;
     border-radius: 17rem;
+
+    .item:hover {
+      color: $color-letter-white;
+    }
   }
 }
 
@@ -39,15 +47,15 @@
   flex-direction: column;
 }
 
+
 @media only screen and (min-width:768px) and (max-width: 1025px) {
   .container-navbar {
     flex-direction: column;
-    
     .navbar-menu {
       display: flex;
     }
   }
-  
+
   .btn-menu {
     display: none;
   }
@@ -69,18 +77,28 @@
 @media only screen and (min-width:200px) and (max-width: 767px) {
   .container-navbar {
     flex-direction: row;
-    
+
     .navbar-menu {
+      padding-left: 30%;
+      padding-right: 30%;
+
       .list-menu {
+        z-index: 10;
+        height: 100vh;
         flex-direction: column;
         align-items: center;
       }
     }
   }
+
+  .item{
+    font-size: 16px;
+    padding-top: 50px;
+  }
   
   .list-menu {
     .list-item:hover {
-      background-color: $color-letter-white;
+      background-color: transparent;
       border-radius: 17rem;
       
       .item:hover {

@@ -16,3 +16,6 @@ yarn-error.log
 /public/app/public
 /public/app/scss/dist
 resources/
+/public/css
+/public/app/
+/public/app/scss/dist/
