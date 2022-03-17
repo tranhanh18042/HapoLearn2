@@ -19,3 +19,4 @@ resources/
 /public/css
 /public/app/
 /public/app/scss/dist/
+/config/database/

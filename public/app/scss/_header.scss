@@ -17,7 +17,7 @@ html {
 
 .container-navbar {
   .logo {
-      margin-left: 5%;
+    margin-left: 5%;
   }
 }
 
@@ -51,6 +51,7 @@ html {
 @media only screen and (min-width:768px) and (max-width: 1025px) {
   .container-navbar {
     flex-direction: column;
+
     .navbar-menu {
       display: flex;
     }
@@ -59,15 +60,15 @@ html {
   .btn-menu {
     display: none;
   }
-  
+
   .logo {
     margin-left: 0;
   }
-  
+
   .navbar-menu {
     margin-right: 0;
   }
-  
+
   .list-menu {
     display: flex;
     flex-direction: row;
@@ -91,27 +92,28 @@ html {
     }
   }
 
-  .item{
+  .item {
     font-size: 16px;
     padding-top: 50px;
   }
-  
+
   .list-menu {
     .list-item:hover {
       background-color: transparent;
       border-radius: 17rem;
-      
+
       .item:hover {
         color: #B2D235;
       }
     }
   }
-  
+
   .logo {
     width: 50px;
     height: 26px;
     margin-left: 0;
     margin-right: 55%;
+
     .img-logo {
       width: 150px;
       height: 26px;
