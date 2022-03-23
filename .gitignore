@@ -15,8 +15,3 @@ yarn-error.log
 /.vscode
 /public/app/public
 /public/app/scss/dist
-resources/
-/public/css
-/public/app/scss/dist/git
-/public/app/scss/slick-1.8.1
-/config/database/
