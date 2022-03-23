@@ -1,6 +1,14 @@
-body {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
+@import 'variable';
+@import 'header';
+@import 'banner';
+@import 'list_courses';
+@import 'other_courses';
+@import 'why_hapo';
+@import 'feedback';
+@import 'become';   
+@import 'statistic';
+@import 'footer';
+@import 'author';
+@import 'form_login';
+@import 'form_register';
+@import 'icon_messenger';
