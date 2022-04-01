@@ -19,11 +19,11 @@ class Lesson extends Model
         'requiment',
         'avatar'
     ];
-    public function document()
+    public function documents()
     {
         return $this->hasMany(document::class);
     }
-    public function user()
+    public function users()
     {
         return $this->belongsToMany(User::class, 'user_lesson', 'id_lesson', 'id_user');
     }

@@ -24,15 +24,15 @@ class Courses extends Model
     {
         return $this->belongsToMany(Tags::class, 'courses_tags', 'id_tags', 'id_courses');
     }
-    public function review()
+    public function reviews()
     {
         return $this->hasMany(Review::class);
     }
-    public function lesson()
+    public function lessons()
     {
         return $this->hasMany(Lesson::class);
     }
-    public function user()
+    public function users()
     {
         return $this->belongsToMany(User::class, 'user_courses', 'id_courses', 'id_user');
     }

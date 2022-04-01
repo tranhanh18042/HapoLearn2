@@ -64,7 +64,7 @@ class EditUser extends Authenticatable
     {
         return $this->hasMany(Review::class);
     }
-    public function teacher()
+    public function teachers()
     {
         return $this->belongsToMany(Courses::class, 'teacher_courses', 'id_user', 'id_courses');
     }
