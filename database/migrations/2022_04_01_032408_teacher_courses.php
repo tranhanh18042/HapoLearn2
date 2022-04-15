@@ -15,10 +15,10 @@ class TeacherCourses extends Migration
     {
         Schema::create('teacher_courses',function(Blueprint $table){
             $table->id();
-            $table->bigInteger('id_user');
-            $table->bigInteger('id_courses');
+            $table->bigInteger('id_user')->nullable();
+            $table->bigInteger('id_courses')->nullable();
             $table->timestamps();
-            $table->softDeletes();
+            $table->softDeletes()->nullable();
         });    }
 
     /**

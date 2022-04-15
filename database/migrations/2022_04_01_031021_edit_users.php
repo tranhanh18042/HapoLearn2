@@ -14,14 +14,12 @@ class EditUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('phone_number','20');
-            $table->string('address','255');
-            $table->date('birthday');
-            $table->text('about');
-            $table->string('avatar','255');
-            $table->boolean('status');
-            $table->string('username','255');
-            $table->softDeletes();
+            $table->string('address')->nullable();
+            $table->dateTime('birthday')->nullable();
+            $table->text('about')->nullable();
+            $table->string('avatar')->nullable();
+            $table->boolean('status')->nullable();
+            $table->softDeletes()->nullable();
         });
     }
 
@@ -33,15 +31,7 @@ class EditUsers extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('phone_number','20');
-            $table->dropColumn('address','255');
-            $table->dropColumn('birthday');
-            $table->dropColumn('about');
-            $table->dropColumn('avatar','255');
-            $table->dropColumn('status');
-            $table->dropColumn('username','255');
-            $table->dropsoftDeletes();
+           $table->dropIfExists('users');
         });
-
     }
 }

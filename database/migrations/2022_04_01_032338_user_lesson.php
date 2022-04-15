@@ -13,12 +13,12 @@ class UserLesson extends Migration
      */
     public function up()
     {
-        Schema::create('user_lesson',function(Blueprint $table){
+        Schema::create('user_lessons',function(Blueprint $table){
             $table->id();
-            $table->bigInteger('id_user');
-            $table->bigInteger('id_lesson');
+            $table->bigInteger('id_user')->nullable();
+            $table->bigInteger('id_lesson')->nullable();
             $table->timestamps();
-            $table->softDeletes();
+            $table->softDeletes()->nullable();
         });
     }
 
@@ -29,6 +29,6 @@ class UserLesson extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_lesson');
+        Schema::dropIfExists('user_lessons');
     }
 }

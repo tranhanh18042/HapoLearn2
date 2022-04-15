@@ -13,13 +13,13 @@ class Review extends Migration
      */
     public function up()
     {
-        Schema::create('review',function(Blueprint $table){
+        Schema::create('reviews',function(Blueprint $table){
             $table->id();
-            $table->bigInteger('id_user');
-            $table->string('commet','1000');
-            $table->integer('vote');
+            $table->bigInteger('id_user')->nullable();
+            $table->string('commet','1000')->nullable();
+            $table->integer('vote')->nullable();
             $table->timestamps();
-            $table->softDeletes();
+            $table->softDeletes()->nullable();
         });
     }
 
@@ -30,6 +30,6 @@ class Review extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('review');
+        Schema::dropIfExists('reviews');
     }
 }

@@ -13,16 +13,16 @@ class Lesson extends Migration
      */
     public function up()
     {
-        Schema::create('lesson',function(Blueprint $table){
+        Schema::create('lessons',function(Blueprint $table){
             $table->id();
-            $table->bigInteger('id_document');
-            $table->string('lesson','255');
-            $table->text('description');
-            $table->text('requiment');
-            $table->string('avatar','255');
-            $table->integer("time");
+            $table->bigInteger('id_document')->nullable();
+            $table->string('lesson','255')->nullable();
+            $table->text('description')->nullable();
+            $table->text('requiment')->nullable();
+            $table->string('avatar','255')->nullable();
+            $table->integer("time")->nullable();
             $table->timestamps();
-            $table->softDeletes();
+            $table->softDeletes()->nullable();
         });
     }
 
@@ -33,6 +33,6 @@ class Lesson extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lesson');
+        Schema::dropIfExists('lessons');
     }
 }

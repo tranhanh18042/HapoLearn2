@@ -15,10 +15,10 @@ class UsersCourses extends Migration
     {
         Schema::create('user_courses',function(Blueprint $table){
             $table->id();
-            $table->bigInteger('id_user');
-            $table->bigInteger('in_courses');
+            $table->bigInteger('id_user')->nullable();
+            $table->bigInteger('in_courses')->nullable();
             $table->timestamps();
-            $table->softDeletes();
+            $table->softDeletes()->nullable();
         });
     }
 

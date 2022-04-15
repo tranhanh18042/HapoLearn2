@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CoursesTags extends Migration
+class AddColoumPhone extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CoursesTags extends Migration
      */
     public function up()
     {
-        Schema::create('courses_tags',function(Blueprint $table){
-            $table->id();
-            $table->bigInteger('id_tags')->nullable();
-            $table->timestamps();
-            $table->softDeletes()->nullable();
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('phone_number')->nullable();
         });
     }
 
@@ -28,6 +25,8 @@ class CoursesTags extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('courses_tags');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('phone_number')->nullable();
+        });
     }
 }

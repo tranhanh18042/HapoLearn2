@@ -15,10 +15,10 @@ class Tags extends Migration
     {
         Schema::create('tags',function(Blueprint $table){
             $table->id();
-            $table->string('name','255');
-            $table->string('link','255');
+            $table->string('name','255')->nullable();
+            $table->string('link','255')->nullable();
             $table->timestamps();
-            $table->softDeletes();
+            $table->softDeletes()->nullable();
         });
     }
 

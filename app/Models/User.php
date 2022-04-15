@@ -5,13 +5,14 @@ namespace App\Models;
 use Courses;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Lesson;
 use Review;
 
-class EditUser extends Authenticatable
+class User extends Model
 {
     use HasFactory, Notifiable;
     use SoftDeletes;

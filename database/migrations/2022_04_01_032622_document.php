@@ -13,13 +13,13 @@ class Document extends Migration
      */
     public function up()
     {
-        Schema::create('document',function(Blueprint $table){
+        Schema::create('documents',function(Blueprint $table){
             $table->id();
-            $table->string('video');
-            $table->string('file');
-            $table->string('document');
+            $table->string('video')->nullable();
+            $table->string('file')->nullable();
+            $table->string('document')->nullable();
             $table->timestamps();
-            $table->softDeletes();
+            $table->softDeletes()->nullable();
         });
     }
 
@@ -30,6 +30,6 @@ class Document extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('document');
+        Schema::dropIfExists('documents');
     }
 }

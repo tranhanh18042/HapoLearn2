@@ -15,16 +15,16 @@ class Courses extends Migration
     {
         Schema::create('courses',function(Blueprint $table){
             $table->id();
-            $table->bigInteger('id_courses_tags');
-            $table->bigInteger('id_review');
-            $table->bigInteger('id_lesson');
-            $table->string('courses','255');
-            $table->text('description');
-            $table->integer('price');
-            $table->string('avatar','255');
-            $table->integer("time");
+            $table->bigInteger('id_courses_tags')->nullable();
+            $table->bigInteger('id_review')->nullable();
+            $table->bigInteger('id_lesson')->nullable();
+            $table->string('courses','255')->nullable();
+            $table->text('description')->nullable();
+            $table->integer('price')->nullable();
+            $table->string('avatar','255')->nullable();
+            $table->integer("time")->nullable();
             $table->timestamps();
-            $table->softDeletes();
+            $table->softDeletes()->nullable();
         });
     }
 
