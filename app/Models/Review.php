@@ -4,24 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Foundation\Auth\User;
 
 class Review extends Model
 {
     use HasFactory;
-    use SoftDeletes;
 
     protected $fillable = [
         'comment',
-        'vote'
+        'vote',
     ];
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
-    public function courses()
-    {
-        return $this->belongsTo(Courses::class);
-    }
+
+    public function User(){
+        return $this->belongsTo(User::class,'id_user');
+   }
+   public function Courses(){
+       return $this->belongsTo(Courses::class);
+   }
 }
