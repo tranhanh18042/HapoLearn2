@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hapo learn</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/scssListCourse/dist/_all_courses.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-main">
+        <div class="container-fluid container-navbar">
+            <button class="navbar-toggler btn-menu" id="menu-bar" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand logo" href="#">
+                <img src="./scss/img/hapo_learn.png" class="img-logo" alt="HapoBanner" />
+            </a>
+            <div class="collapse navbar-collapse navbar-menu" id="navbarNav">
+                <ul class="navbar-nav list-menu">
+                    <li class="nav-item list-item">
+                        <a class="nav-link item" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item list-item">
+                        <a class="nav-link item" href="#">ALL COURSES</a>
+                    </li>
+                    <li class="nav-item list-item" id="login-register">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="nav-link item btn-login-register" href="">LOGIN/REGISTER</a>
+                    </li>
+                    <li class="nav-item list-item">
+                        <a class="nav-link item" href="#">PROFILE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="login-and-register">
+        <!-- Modal -->
+        <div class="modal fade modal-login-register" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <!-- login -->
+                <div class="modal-content content-login">
+                    <div class="modal-header header-login">
+                        <button class="btn-login-header" href="#">LOGIN</button>
+                        <button class="btn-register" href="#">REGISTER</button>
+                    </div>
+                    <div class="modal-body body-login">
+                        <div class="mb-3 username">
+                            <label for="exampleInputEmail1" class="form-label title-username">Username:</label>
+                            <input type="email" class="form-control text-username" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3 password">
+                            <label for="exampleInputPassword1" class="form-label title-password">Password:</label>
+                            <input type="password" class="form-control text-password" id="exampleInputPassword1" />
+                        </div>
+                        <div class="mb-3 form-check">
+                            <div class="remember-me">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                            </div>
+                            <a href="#">Forgot password</a>
+                        </div>
+                        <div class="btn-login">
+                            <button href="#">LOGIN</button>
+                        </div>
+                    </div>
+                    <div class="login-with">
+                        <div class="line-left"></div>
+                        <p>Login with</p>
+                        <div class="line-right"></div>
+                    </div>
+                    <div class="modal-footer footer-login">
+                        <button type="button" class="btn-google">
+                            <i class="fa-brands fa-google-plus-g"></i> Google
+                        </button>
+                        <button type="button" class="btn-facebook">
+                            <i class="fa-brands fa-facebook-f"></i> Facebook
+                        </button>
+                    </div>
+                </div>
+                <!-- end login -->
+                <!-- register -->
+                <div class="modal-content content-register">
+                    <div class="modal-header header-register">
+                        <button class="btn-login-header" href="#">LOGIN</button>
+                        <button class="btn-register" href="#">REGISTER</button>
+                    </div>
+                    <div class="modal-body body-register">
+                        <div class="mb-3 username">
+                            <label for="exampleInputEmail1" class="form-label title-username">Username:</label>
+                            <input type="email" class="form-control text-username" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3 email">
+                            <label for="exampleInputPassword1" class="form-label title-email">Email:</label>
+                            <input type="email" class="form-control text-email" id="exampleInputPassword1" />
+                        </div>
+                        <div class="mb-3 password">
+                            <label for="exampleInputPassword1" class="form-label title-password">Password:</label>
+                            <input type="password" class="form-control text-password" id="exampleInputPassword1" />
+                        </div>
+                        <div class="mb-3 repeat-password">
+                            <label for="exampleInputPassword1" class="form-label title-repeat-password">Repeat
+                                Password:</label>
+                            <input type="password" class="form-control text-repeat-password"
+                                id="exampleInputPassword1" />
+                        </div>
+                        <div class="btn-login">
+                            <button href="#">REGISTER</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end register -->
+            </div>
+        </div>
+    </section>
+    <section class="form-search">
+        <div class="container-search">
+            <div class="form-search">
+                <button type="button" class="btn btn-outline-dark btn-filter">
+                    <i class="fa-solid fa-sliders fa-xl"></i> Filter
+                </button>
+                <form class="d-flex">
+                    <input class="form-control me-2 input-search" type="search" placeholder="Search..."
+                        aria-label="Search" />
+                    <button class="btn btn-search" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+            <div class="form-filter">
+                <div class="title-search">
+                    <p>Lọc theo</p>
+                </div>
+                <div class="form-option">
+                    <div class="btn-group btn-group-option" role="group">
+                        <button type="button" class="btn-new">Mới nhất</button>
+                        <button type="button" class="btn-old">Cũ nhất</button>
+                    </div>
+                    <select class="form-select form-select-lg mb-3 option-search" aria-label=".form-select-lg example">
+                        <option selected>Teacher</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-lg mb-3 option-search" aria-label=".form-select-lg example">
+                        <option selected>Số người học</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-lg mb-3 option-search" aria-label=".form-select-lg example">
+                        <option selected>Thời gian học</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-lg mb-3 option-search" aria-label=".form-select-lg example">
+                        <option selected>Số bài học</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-lg mb-3 option-search" aria-label=".form-select-lg example">
+                        <option selected>Tags</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="all-courses">
+        <div class="container-courses-group">
+            <div class="card">
+                <div class="header-card">
+                    <div class="img-courses">
+                        <img src="./scss/scssListCourse/img/img_html.png" class="card-img-top" alt="img_html" />
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">HTML Fundamentals</p>
+                        <p class="card-text">
+                            Practice during lessons, practice between lessons, practice
+                            whenever you can. Master the task, then reinforce and test your
+                            knowledge with fun, hands-on exercises and interactive quizzes.
+                        </p>
+                        <div class="btn-more">
+                            <a href="#" class="btn btn-primary btn-courses">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="imformation-courses">
+                    <div class="learners-courses">
+                        <p class="learners">Learners</p>
+                        <p class="quantity-learners">16,882</p>
+                    </div>
+                    <div class="lessons-courses">
+                        <p class="lessons">Lessons</p>
+                        <p class="quantity-lessons">2,689</p>
+                    </div>
+                    <div class="times-courses">
+                        <p class="times">Times</p>
+                        <p class="quantity-times">100 (h)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header-card">
+                    <div class="img-courses">
+                        <img src="./scss/scssListCourse/img//img_css_courses.png" class="card-img-top" alt="img_css" />
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">CSS Fundamentals</p>
+                        <p class="card-text">
+                            Practice during lessons, practice between lessons, practice
+                            whenever you can. Master the task, then reinforce and test your
+                            knowledge with fun, hands-on exercises and interactive quizzes.
+                        </p>
+                        <div class="btn-more">
+                            <a href="#" class="btn btn-primary btn-courses">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="imformation-courses">
+                    <div class="learners-courses">
+                        <p class="learners">Learners</p>
+                        <p class="quantity-learners">16,882</p>
+                    </div>
+                    <div class="lessons-courses">
+                        <p class="lessons">Lessons</p>
+                        <p class="quantity-lessons">2,689</p>
+                    </div>
+                    <div class="times-courses">
+                        <p class="times">Times</p>
+                        <p class="quantity-times">100 (h)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container-footer">
+            <div class="logo-and-text">
+                <img src="./scss/img/logo_hapo_footer.png" alt="logo_footer" />
+                <p>Interactive lessons, "on-the-go" practice, peer support.</p>
+            </div>
+            <div class="group-option">
+                <div class="icon">
+                    <a href="#">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">Courses</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="icon">
+                    <a href="#">Contact</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <div class="group-icon">
+                <a title="facebook.com/tuyen.dung.haposoft" href="#"><img src="./scss/img/logo_facebook.png"
+                        alt="logo_facebook" /></a>
+                <a title="+84-85-645-9898" href="#"><img src="./scss/img/logo_phone.png" alt="logo_phone" /></a>
+                <a title="info@haposoft.com" href="#"><img src="./scss/img/logo_mail.png" alt="logo_mail" /></a>
+            </div>
+        </div>
+    </section>
+    <section class="author">
+        <div class="box-author">
+            <p>© 2020 HapoLearn, Inc. All rights reserved.</p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
